@@ -1,0 +1,176 @@
+
+/* participant contest submission */
+.contestSubmissions .inputContainer {
+  margin: 60px 0 0;
+  position: relative;
+  height: 300px;
+}
+.contestSubmissions .inputContainer label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  cursor: pointer;
+  opacity: 0;
+}
+.contestSubmissions .inputContainer input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 98;
+  opacity: 0;
+}
+.contestSubmissions .inputContainer:hover .inputDisplay {
+  opacity: 0.6;
+}
+.contestSubmissions .inputContainer .inputDisplay {
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 1px 5px #8FBD4B;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 300px;
+  z-index: 1;
+  text-align: center;
+  padding-top: 40px;
+}
+.contestSubmissions .inputContainer .inputDisplay h5 {
+  margin: 0;
+  color: #666666;
+}
+.contestSubmissions .inputBoxes1 {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.contestSubmissions .inputBoxes1 .box1 {
+  width: 100px;
+  height: 100px;
+  background-color: #ffffff;
+  box-shadow: 0 1px 5px #8FBD4B inset;
+  display: flex;
+  overflow: hidden;
+}
+.contestSubmissions .inputBoxes1 .box1 p {
+  width: 100%;
+  margin: auto;
+  font-weight: 700;
+}
+/* .contestSubmissions .inputContainer .inputDisplay .inputBoxes {
+  height: 100px;
+  margin: 50px 20px;
+  display: flex;
+  justify-content: space-around;
+}
+.contestSubmissions .inputContainer .inputDisplay .inputBoxes .boxContainer {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer !important;
+}
+ .contestSubmissions .inputContainer .boxContainer input {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  z-index: 2;
+}
+.contestSubmissions .inputContainer .boxContainer label {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  z-index: 3;
+  cursor: pointer;
+  border: 1px solid red;
+}
+.contestSubmissions .inputContainer .inputDisplay .inputBoxes .box {
+  width: 100%;
+  height: 100%;
+  background-color: #EFF1E5;
+}
+.contestSubmissions .inputContainer .inputDisplay .inputBoxes .boxContainer:hover .box {
+  box-shadow: 0 1px 5px rgba(0,0,0,0.3) inset;
+} */
+.contestSubmissions form label {
+  display: block;
+  font-weight: 700;
+  font-size: 16px;
+}
+.contestSubmissions form textarea {
+  display: block;
+  width: 100%;
+  height: 110px;
+  outline: none;
+  padding: 5px 10px;
+  background-color: #ffffff;
+  border: 1.5px solid #d5f3a8;
+  border-radius: 5px;
+  /* box-shadow: 0 1px 5px rgba(0,0,0,0.1); */
+  transition: 0.15s;
+}
+.contestSubmissions form textarea:focus {
+  box-shadow: 0px 0 6px #8FBD4B;
+}
+.contestSubmissions button {
+  background-color: #8FBD4B;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 8px 30px;
+  border-radius: 5px;
+  display: block;
+  margin: 40px auto;
+}
+.contestSubmissions button:hover {
+  background-color: #A8CC74;
+}
+.contestSubmissions button:active {
+  background-color: #8FBD4B;
+}
+.contestSubmissions a {
+  text-decoration: none;
+}
+/* participant contest submission ends */
+
+/* participant contest winner */
+.contestDetail .winner {
+  text-align: center;
+}
+.contestDetail .winner h1 {
+  margin-bottom: 40px;
+}
+.contestDetail .winner h6 {
+  margin: 0;
+}
+.contestDetail .winner h6 span {
+  font-size: 18px;
+  font-weight: 700;
+  color: #8FBD4B;
+}
+.contestDetail .winner .payment {
+  background-color: #cae4a7;
+  border: 3px solid #8FBD4B;
+  border-radius: 5px;
+  height: 110px;
+  margin: 50px 0 70px;
+}
+.contestDetail .winner .paymentNot {
+  background-color: #FBDADA;
+  border: 3px solid #F2696A;
+}
+.contestDetail .winner .payment p {
+  line-height: 100px;
+  margin-top: 0;
+  color: #191919;
+  font-weight: 700;
+}
+/* participant contest winner ends */

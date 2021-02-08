@@ -1,0 +1,372 @@
+/* admin dashboard */
+.adminDashboard .box1 {
+    width: 100%;
+    height: 200px;
+    border: 1px solid red;
+}
+.adminDashboard h5 {
+    font-weight: 700;
+    color: #8FBD4B;
+    margin-top: 50px;
+}
+.adminDashboard .tabsContainer {
+    display: flex;
+    border-bottom: 2px solid #8FBD4B;
+}
+.adminDashboard .tabsContainer .tabs {
+    width: 70px;
+    height: 40px;
+    display: flex;
+    margin-bottom: -2px;
+    cursor: pointer;
+    color: #8FBD4B;
+}
+.adminDashboard .tabsContainer .tabs:hover p {
+    font-weight: 700;
+}
+.adminDashboard .tabsContainer .tabs p {
+    margin: auto;
+}
+.adminDashboard .table {
+    margin: 30px 0 50px;
+    font-size: 14px;
+}
+.adminDashboard .tableHeader {
+    display: flex;
+    height: 50px;
+    background-color: #C7F3E7;
+}
+.adminDashboard .table .tableHeader .header {
+    width: 150px;
+    display: flex;
+}
+.adminDashboard .table .tableHeader .header p {
+    margin: auto 0;
+    font-weight: 700;
+}
+.adminDashboard .table .tableHeader .headerPayment {
+    width: 180px;
+}
+.adminDashboard .table .tableHeader .headerCheck {
+    width: 100px;
+}
+.adminDashboard .table .tableHeader .headerCheck input {
+    width: 20px;
+    height: 20px;
+    margin: auto 20px;
+    cursor: pointer;
+}
+.adminDashboard .table .tableHeader .headerTitle {
+    flex: auto;
+}
+.adminDashboard .table .tableHeader .headerMore {
+    position: relative;
+}
+.adminDashboard .table .tableHeader .headerMore i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.7;
+    font-size: 20px;
+    cursor: pointer;
+}
+.adminDashboard .table .tableHeader .headerAmount {
+    position: relative;
+    width: 80px;
+}
+.adminDashboard .table .tableHeader .headerAmount p {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%); 
+}
+.adminDashboard .table .tableContent {
+    display: flex;
+    min-height: 60px;
+    border-top: 1px solid #C7F3E7;
+    border-bottom: 1px solid #C7F3E7;
+}
+.adminDashboard .table .tableContent .contentTable {
+    width: 150px;
+}
+.adminDashboard .table .tableContent .contentCheck {
+    width: 100px;
+    display: flex;
+}
+.adminDashboard .table .tableContent .contentCheck input {
+    width: 20px;
+    height: 20px;
+    margin: auto 20px;
+    cursor: pointer;
+}
+.adminDashboard .table .tableContent .contentTitle {
+    flex: auto;
+}
+.adminDashboard .table .tableContent .contentTitle .contentTitleName {
+    margin: 6px 0 0;
+    font-weight: 700;
+}
+.adminDashboard .table .tableContent .contentTitle .contentTitleBy {
+    margin: 0;
+    color: #666666;
+}
+.adminDashboard .table .tableContent .contentStatus {
+    display: flex;
+}
+.adminDashboard .table .tableContent .contentStatus .statusIcon {
+    border: 2px solid #8FBD4B;
+    padding: 3px 18px;
+    border-radius: 17px;
+    display: flex;
+    margin: auto 0;
+}
+.adminDashboard .table .tableContent .contentStatus .statusIcon p {
+    margin: auto;
+    font-weight: 700;
+    color: #8FBD4B;
+}
+.adminDashboard .table .tableContent .contentStatus .statusIconPending {
+    border: 2px solid #E8B443;
+}
+.adminDashboard .table .tableContent .contentStatus .statusIconPending p {
+    color: #E8B443;
+}
+.adminDashboard .table .tableContent .contentStatus .statusIconClosed {
+    border: 2px solid #f59495;
+}
+.adminDashboard .table .tableContent .contentStatus .statusIconClosed p {
+    color: #F59495;
+}
+.adminDashboard .table .tableContent .contentPayment {
+    width: 180px;
+}
+.adminDashboard .table .tableContent .contentPayment .paidStatus {
+    line-height: 5px;
+    margin: 8px 0;
+}
+.adminDashboard .table .tableContent .contentPayment .paidStatus .paidIcon {
+    background-color: #d3e7b7;
+    width: 50px;
+    height: 20px;
+    display: flex;
+    border-radius: 10px;
+}
+.adminDashboard .table .tableContent .contentPayment .paidStatus .paidIcon i {
+    font-size: 7px;
+    margin: 0 5px;
+    line-height: 20px;
+    color: #8FBD4B;
+}
+.adminDashboard .table .tableContent .contentPayment .paidStatus .paidIcon p {
+    line-height: 20px;
+    color: #8FBD4B;
+    font-weight: 700;
+}
+.adminDashboard .table .tableContent .contentPayment .paidStatus .unpaidIcon {
+    background-color: #f1adaf;
+    width: 70px;
+    height: 20px;
+    display: flex;
+    border-radius: 10px;
+}
+.adminDashboard .table .tableContent .contentPayment .paidStatus .unpaidIcon i {
+    font-size: 7px;
+    margin: 0 5px;
+    line-height: 20px;
+    color: #ee4c4e;
+}
+.adminDashboard .table .tableContent .contentPayment .paidStatus .unpaidIcon p {
+    line-height: 20px;
+    color: #ee4c4e;
+    font-weight: 700;
+}
+.adminDashboard .table .tableContent .contentPayment .paidDate span {
+    display: block;
+    margin-top: -5px;
+}
+.adminDashboard .table .tableContent .contentAmount {
+    width: 80px;
+}
+.adminDashboard .table .tableContent .contentAmount p {
+    margin: 0;
+    text-align: right;
+}
+.adminDashboard .table .tableContent .contentAmount .amountMoney {
+    margin-top: 8px;
+    font-weight: 700;
+}
+.adminDashboard .table .tableContent .contentAmount .amountCurrency {
+    color: #666666;
+}
+.adminDashboard .table .tableContent .contentMore {
+    position: relative;
+    display: flex;
+}
+.adminDashboard .table .tableContent .contentMore i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    cursor: pointer;
+}
+.adminDashboard .table .tableContent .contentMore a {
+    margin: auto;
+    cursor: pointer;
+    text-decoration: none;
+    color: #191919;
+}
+.adminDashboard .table .tableContent .contentMore a:hover {
+    font-weight: 700;
+}
+.adminDashboard .tableFooter {
+    height: 50px;
+    background-color: #C7F3E7;
+    display: flex;
+    justify-content: flex-end;
+}
+.adminDashboard .tableFooter .tableFooterContent {
+    width: 120px;
+    display: flex;
+}
+.adminDashboard .tableFooter .tableFooterContent i {
+    cursor: pointer;
+}
+.adminDashboard .tableFooter .tableFooterContent p {
+    font-weight: 700;
+    margin: auto;
+}
+.adminDashboard .tableFooter .rowsCount {
+    width: 200px;
+}
+.adminDashboard .tableFooter .rowsCount select {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-weight: 700;
+}
+.adminDashboard .tableFooter .tablePagination {
+    position: relative;
+}
+.adminDashboard .tableFooter .tablePagination i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+}
+.adminDashboard .tableFooter .tablePagination .fa-chevron-left {
+    left: 30px;
+}
+.adminDashboard .tableFooter .tablePagination .fa-chevron-right {
+    right: 30px;
+}
+.adminDashboard .smallTable {
+    display: none;
+    margin: 30px 0 50px;
+}
+.adminDashboard .smallTable .tableHeader {
+    display: flex;
+}
+.adminDashboard .smallTable .tableHeader p {
+    margin: auto;
+    font-weight: 700;
+}
+.adminDashboard .smallTable .tableContent {
+    display: block;
+    min-height: 50px;
+}
+.adminDashboard .smallTable .tableContent .contentSmallTable {
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+}
+.adminDashboard .smallTable .tableContent .contentTitle {
+    background-color: #f0f0f0;
+    min-height: 50px;
+    display: flex;
+    cursor: pointer;
+}
+.adminDashboard .smallTable .tableContent .contentTitle p {
+    margin: auto 0;
+    padding: 0 30px 0 10px;
+    width: 100%;
+}
+.adminDashboard .smallTable .tableContent .contentTitle i {
+    transition: 0.5s;
+    margin: auto 20px;
+}
+.adminDashboard .smallTable .tableContent .contentTitle a {
+    margin: auto 10px auto 0;
+    width: 80px;
+}
+.adminDashboard .smallTable .tableContent .contentTitle button {
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: #212529;
+    color: #ffffff;
+    font-size: 14px;
+    height: 30px;
+    font-weight: 700;
+    width: 100%;
+}
+.adminDashboard .smallTable .tableContent .contentDesc {
+    padding: 0 20px 0 60px;
+    height: 0px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.adminDashboard .smallTable .tableContent .contentDescShow {
+    height: 190px;
+}
+.adminDashboard .smallTable .tableContent .contentDesc p {
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+/* admin dashboard ends */
+
+.errorPaymentConfirmation {
+    color: rgb(253, 82, 82);
+    margin-bottom: 80px;
+    font-weight: 700;
+}
+.errorPaymentSent {
+    color: rgb(253, 82, 82);
+    margin: 50px 0 80px;
+    font-weight: 700;
+    text-align: center;
+}
+.submissionsContainer {
+    margin-top: 20px !important;
+}
+.submissionsContainer img {
+    height: 162px;
+    width: 188px;
+    border-radius: 5px;
+}
+.errorAdmin {
+    color: #8FBD4B;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 0;
+    line-height: 60px;
+}
+.providerContestDetail .payment {
+    background-color: #cae4a7;
+    border: 3px solid #8FBD4B;
+    border-radius: 5px;
+    height: 110px;
+    margin: 50px 0 70px;
+    width: 100%;
+}
+.providerContestDetail .paymentNot {
+    background-color: #FBDADA;
+    border: 3px solid #F2696A;
+}
+.providerContestDetail .payment p {
+    line-height: 100px;
+    margin-top: 0;
+    color: #191919;
+    font-weight: 700;
+}

@@ -1,0 +1,1158 @@
+* {
+  font-family: 'Lato', sans-serif;
+}
+html {
+  height: 100%;
+}
+body {
+  /* background-color: #EFF1E5; */
+  /* background-color: #F8F6EB; */
+  background-color: #FFFFFF;
+  height: 100%;
+}
+#root {
+  height: 100%;
+}
+.container1 {
+  height: 100%;
+}
+
+/* template */
+
+/* login & register */
+.parentLogin {
+  display: flex;
+  overflow: auto;
+}
+.sideLogin {
+  width: 400px;
+  background-color: #50603F;
+}
+.sideImage {
+  flex: auto;
+  background: url('./Assets/images/landing.svg') no-repeat;
+  background-size: contain;
+  background-position: right;
+  /* position: relative;
+  z-index: 1; */
+  background-color: #ffffff;
+}
+.radio2 {
+  margin-left: 60px;
+}
+.joinus {
+  margin-top: 15px !important;
+}
+.loginButton {
+  width: 100px;
+  height: 40px;
+  padding: 0 !important;
+  /* margin-top: 10px !important; */
+}
+/* login & register ends */
+
+/* navbar */
+.navbarParticipant {
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px #bdd696;
+  position: relative;
+  z-index: 999;
+}
+.navbarParticipant .navbar-brand {
+  font-size: 40px;
+  margin-left: 20px;
+}
+.navbarParticipant .navbar-brand img {
+  height: 50px;
+  width: 50px;
+  margin-top: -10px;
+}
+.navbarParticipant .navbar-brand span {
+  margin-left: 15px;
+  font-family: 'Dosis', sans-serif;
+  font-weight: 700;
+  background: -webkit-linear-gradient(45deg, #8FBD4B, #34441b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.navbarParticipant .nav-link {
+  margin: 0 30px;
+  font-size: 20px;
+  border-bottom: 2px solid rgba(0,0,0,0);
+}
+/* navbar ends */
+
+/* contest page */
+.contestTemplate {
+  margin-top: 50px;
+}
+.contestTemplate h1 {
+  font-weight: 700;
+}
+.contestTemplate h6 {
+  margin: 20px 0;
+}
+.contestTemplate p {
+  margin: 20px 0;
+  color: #666666;
+}
+.posterContainer {
+  display: flex;
+}
+.contestTemplate .contestPoster {
+  width: 200px;
+  border-radius: 5px;
+  /* padding: 10px; */
+  height: 320px;
+  background-color: #C4C4C4;
+  margin-right: 20px;
+  cursor: pointer;
+  object-fit: contain;
+}
+.modalPoster {
+  position: fixed;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0);
+  top: 0;
+  left: 0;
+  /* right: 0;
+  bottom: 0; */
+  transition: 0.5s;
+}
+.modalPoster i {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #212529;
+  cursor: pointer;
+  font-size: 40px;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.modalPoster .modalPosterContent {
+  height: 90%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  border-radius: 2.5%;
+  position: absolute;
+  background-color: #C4C4C4;
+  top: 50%;
+  left: 50%;
+  transition: 0.25s 0.25s;
+  transform: translate(-50%, -50%) scale(0);
+}
+.modalPoster:target {
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.modalPoster:target .modalPosterContent {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/* button */
+.button {
+  background-color: #8FBD4B;
+  border: none;
+  outline: none !important;
+  color: white;
+  padding: 8px 0px !important;
+  border-radius: 5px;
+  display: block;
+  margin: 40px auto;
+  width: 100px;
+  height: 40px;
+}
+.spinner {
+  margin-top: 5px;
+}
+.button:hover {
+  background-color: #A8CC74 !important;
+}
+.button:active {
+  background-color: #8FBD4B !important;
+}
+
+/* contest detail */
+.contestDetail h1 {
+  font-weight: 700;
+}
+.contestDetail button {
+  background-color: #8FBD4B;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  display: block;
+  margin: 30px auto;
+}
+.contestDetail button:hover {
+  background-color: #A8CC74;
+}
+.contestDetail button:active {
+  background-color: #8FBD4B;
+}
+.contestDetail a {
+  text-decoration: none;
+}
+.contestDetail .submissions {
+  text-align: center;
+  margin-top: 60px;
+}
+.contestDetail .submissions .submissionsContainer {
+  margin: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.contestDetail .submissions .submissionsContainer .submissionsCard {
+  height: 300px;
+  width: 300px;
+  border-radius: 7px;
+  overflow: hidden;
+  text-align: left;
+  box-shadow: 0 3px 4px rgba(0,0,0,0.3);
+  transition: 0.5s;
+  cursor: pointer;
+  border: 1px solid rgba(0,0,0,0.2);
+  margin-bottom: 30px;
+  background-color: #ffffff;
+}
+.contestDetail .submissions .submissionsContainer .submissionsCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 28px 4px -15px rgba(0,0,0,0.3);
+}
+.contestDetail .submissions .submissionsContainer .submissionsCard .submissionsImage {
+  height: 180px;
+  width: 100%;
+  background-color: #C4C4C4;
+  object-fit: contain;
+  object-position: center;
+  border-bottom: 1px solid rgb(230, 230, 230);
+  border-radius: 0px;
+}
+.contestDetail .submissions .submissionsContainer .submissionsCard h5 {
+  margin: 18px 0 10px 10px;
+  color: #8FBD4B;
+  font-weight: 700;
+  font-size: 16px;
+}
+.contestDetail .submissions .submissionsContainer .submissionsCard p {
+  margin: 10px;
+  width: 85%;
+  font-size: 14px;
+}
+.contestDetail .noSubmissions {
+  font-weight: 300;
+  color: #8FBD4B;
+  text-align: center;
+  width: 100%;
+}
+.success {
+  text-align: center;
+  font-size: 14px;
+  margin: 0 !important;
+  color: gray;
+  animation: success 0.25s;
+  height: 70px;
+}
+.success i {
+  margin-right: 10px;
+  color: #8FBD4B;
+}
+@keyframes success {
+  0% {
+    transform: scale(0);
+  }
+  90% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* form template */
+.formTemplate h1 {
+  font-weight: 700;
+  margin-top: 50px;
+}
+.formTemplate p {
+  margin: 30px 0;
+}
+.formTemplate .inputContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.formTemplate form div {
+  margin-bottom: 30px;
+}
+.formTemplate label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.formTemplate input {
+  display: block;
+  width: 340px;
+  height: 40px;
+  outline: none;
+  padding: 5px 10px;
+  background-color: #ffffff;
+  border: 1.5px solid #d5f3a8;
+  border-radius: 5px;
+  /* box-shadow: 0 1px 5px rgba(0,0,0,0.1); */
+  transition: 0.15s;
+}
+.formTemplate input:focus {
+  box-shadow: 0px 0 6px #8FBD4B;
+}
+.formTemplate a {
+  text-decoration: none;
+}
+
+/* pagination */
+.pagination {
+  margin: 50px auto !important;
+  width: fit-content;
+  display: flex;
+}
+.pagination .pageBox {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  margin: 0 10px;
+  box-shadow: 0 0 5px 1px #8FBD4B;
+  color: #8FBD4B;
+  cursor: pointer;
+  transition: 0.25s;
+}
+.pagination .pageBox:hover {
+  transform: scale(1.1);
+}
+.pagination .pageBox p {
+  margin: auto;
+  font-weight: 700;
+}
+.pageActive {
+  background-color: #8FBD4B;
+  color: #EFF1E5 !important;
+}
+
+/* loading logo */
+.loadingLogo {
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99999;
+  display: flex;
+}
+.loadingLogo img {
+  margin: auto;
+  display: block;
+  width: 130px;
+  opacity: 0.5;
+  transform: translate(-50%, -50%);
+  filter: drop-shadow(0 0 5px rgba(0,0,0,0.7));
+  animation: loadingLogo 1s infinite;
+}
+@keyframes loadingLogo {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(-10deg);
+  }
+  75% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.loadingContainer {
+  display: flex;
+}
+.loadingContainer .loadingBox {
+  background-color: rgb(228, 228, 228);
+  width: 90%;
+  height: 50%;
+  margin: auto 0;
+  border-radius: 5px;
+  animation: loadingBox 1s infinite;
+}
+@keyframes loadingBox {
+  0% {
+    background-color: rgb(228, 228, 228, 1);
+  }
+  50% {
+    background-color: rgb(228, 228, 228, 0.5);
+  }
+  100% {
+    background-color: rgb(228, 228, 228, 1);
+  }
+}
+/* no data text */
+.noContest h2 {
+  text-align: center;
+  margin-top: 150px;
+  font-weight: 300;
+  color: #8FBD4B;
+  text-align: center;
+}
+/* footer */
+.footerContainer {
+  width: 100%;
+  background-color: #8FBD4B;
+  padding: 60px 0 10px;
+  /* margin-top: 100px; */
+}
+.footerContainer .footerNew {
+  width: 800px;
+  height: 100%;
+  background-color: transparent;
+  margin: 0 auto;
+}
+.footerContainer .footerNew .footerCopy {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 300;
+  margin-top: 30px;
+}
+.footerContainer .footerNew .footerInfo {
+  display: flex;
+}
+.footerContainer .footerNew .footerInfo .footerInfoLeft {
+  border-right: 1.5px solid #393e46;
+  width: 40%;
+  padding-right: 20px;
+}
+.footerContainer .footerNew .footerInfo .footerInfoRight {
+  width: 60%;
+  padding-left: 50px;
+}
+.footerContainer .footerNew .footerInfo h6 {
+  font-weight: 800;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+.footerContainer .footerNew .footerInfo p {
+  font-weight: 300;
+  font-size: 15px;
+}
+.footerContainer .footerNew .footerInfo .footerInfoLeft button {
+  border: 1px solid #212529;
+  outline: none;
+  padding: 3px 7px;
+  background-color: transparent;
+  color: #212529;
+  border-radius: 5px;
+  transition: 0.25s;
+}
+.footerContainer .footerNew .footerInfo .footerInfoLeft button:hover {
+  background-color: #212529;
+  color: #8FBD4B;
+}
+.footerContainer .footerNew .footerInfo .footerInfoLeft .footerLogo {
+  display: flex;
+  margin-bottom: 10px;
+}
+.footerContainer .footerNew .footerInfo .footerInfoLeft .footerLogo img {
+  width: 27px;
+  height: 27px;
+  filter: drop-shadow(0 0 3px rgba(0,0,0,0.5));
+  margin-right: 10px;
+}
+.footerContainer .footerNew .footerInfo .footerInfoLeft .footerLogo h4 {
+  font-family: 'Dosis', sans-serif;
+  font-weight: 700;
+}
+.footerContainer .footerNew .footerInfo .footerInfoRight .footerPowered img {
+  height: 50px;
+  cursor: pointer;
+  margin: 0 30px 0 0;
+}
+.footerContainer .footerNew .footerInfo .footerInfoRight .footerTribute h6 {
+  margin: 30px 0 10px;
+}
+.footerContainer .footerNew .footerInfo .footerInfoRight .footerTribute p {
+  margin: 0;
+}
+.footerContainer .footerNew .footerInfo .footerInfoRight .footerTribute p a {
+  color: #212529;
+  font-weight: 400;
+}
+/* footer ends */
+
+/* error login */
+.modalError {
+  position: fixed;
+  background-color: rgba(0,0,0,0.3);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  animation: errorFadeIn 0.25s forwards;
+  padding: 20px;
+  /* z-index: -1; */
+}
+.modalErrorOut {
+  animation: errorFadeOut 0.25s forwards;
+}
+.modalError .errorBody {
+  width: 400px;
+  height: 350px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin: auto;
+  padding: 30px;
+  position: relative;
+  transform: scale(0.96);
+  animation: errorBounce 0.25s 0.1s forwards;
+}
+.modalError .errorBody img {
+  width: 320px;
+  position: absolute;
+  bottom: 0;
+  left: 37px;
+}
+.modalError .errorBody p {
+  text-align: center;
+  font-size: 18px;
+}
+.modalError .errorBody button {
+  background-color: #8FBD4B;
+  padding: 3px 15px;
+  border: none;
+  outline: none;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(255,255,255,1);
+}
+.modalError .errorBody button:hover {
+  background-color: #A8CC74
+}
+.modalError .errorBody button:active {
+  background-color: #8FBD4B
+}
+@keyframes errorFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes errorFadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes errorBounce {
+  0% {
+    transform: scale(0.96);
+  }
+  33% {
+    transform: scale(1.02);
+  }
+  66% {
+    transform: scale(0.96);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/* error login ends */
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+::-webkit-scrollbar-thumb {
+  background: #bfe28a;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(167, 204, 113)
+}
+
+/* template ends */
+
+/* media screen */
+
+/* screen > 768px */
+@media (min-width: 768px) {
+  .navbarParticipant {
+    position: relative;
+  }
+  .navbarParticipant .mr-auto {
+    position: absolute;
+    right: 20px;
+  }
+}
+
+/* screen < 1200px */
+@media (max-width: 1200px) {
+  .formTemplate input {
+    width: 290px;
+  }
+}
+
+/* screen < 992px */
+@media (max-width: 992px) {
+  .navbarParticipant .nav-link {
+    margin: 0 10px;
+  }
+  .contestDetail .submissions .submissionsContainer {
+    justify-content: center;
+  }
+  .contestSubmissions .inputContainer .inputDisplay {
+    height: 270px;
+  }
+  .contestSubmissions .inputBoxes1 .box1 {
+    width: 70px;
+    height: 70px;
+  }
+  .contestSubmissions .inputContainer {
+    height: 270px;
+  }
+  .formTemplate .inputContainer {
+    display: block;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .formTemplate input {
+    width: 100%;
+  }
+  .formsr {
+    display: flex !important;
+  }
+  .formsr .search-box {
+    width: 230px;
+    margin-right: 20px;
+  }
+  .formsr .search-box1 {
+    flex: auto;
+    margin-right: 0;
+  }
+  .formsr .search-box .search-input {
+    width: 100% !important;
+  }
+  .adminDashboard .table .tableContent .contentMore a span {
+    display: none;
+  }
+  .footerContainer .footerNew {
+    width: 600px;
+  }
+  .landingWork {
+    display: none;
+  }
+  .landingRole {
+    display: block;
+  }
+  .landingRole .roleDesc {
+    margin: 0;
+    padding: 0 20px;
+    width: 100%;
+  }
+  .landingRole .roleDesc h1 {
+    width: 100% !important;
+    text-align: center;
+  }
+  .landingWhat {
+    height: fit-content;
+  }
+  .landingWhat .descContainer {
+    padding: 80px 50px;
+  }
+  .landingWhat .imageContainer {
+    padding: 0 20px;
+  }
+  .landingWhat .imageContainer img {
+    width: 100%;
+  }
+  .landingRole {
+    height: fit-content;
+  }
+  .landingRole .roleImage {
+    width: 100%;
+    padding: 80px;
+    height: fit-content;
+  }
+  .landingHow {
+    padding: 50px 20px;
+  }
+  .landingHow .howContainer {
+    width: 100%;
+  }
+  .landing-parent {
+    background-position: center;
+    background-size: 700px;
+  }
+  .landingDesc {
+    margin-right: 40px !important;
+  }
+  .posterContainer {
+    display: block;
+  }
+  .contestTemplate .contestPoster {
+    width: 100%;
+    height: 320px;
+    margin-bottom: 20px;
+  }
+  .landing-parent {
+    background-position: bottom;
+    background-size: 700px;
+    height: 670px;
+    margin-bottom: 50px;
+  }
+}
+
+/* screen < 768px */
+@media (max-width: 768px) {
+  .navbarParticipant .navbar-brand {
+    margin-left: 5px;
+  }
+  .modal-dialog {
+    width: 90%;
+  }
+
+  .buttoniPending{
+    position: static;
+    width: 100%;
+  }
+
+  .image-flex-container {
+    display: block;
+    width: 100%;
+  }
+
+  .clicked-div{
+    padding: 20px;
+  }
+
+  .image-kecil{
+    width: 100%;
+  }
+  .modalBody {
+    width: 100%;
+  }
+  .formsr {
+    display: block !important;
+    margin-bottom: 60px !important;
+  }
+  .formsearch {
+    display: flex !important; 
+  }
+  .formsr .btn-2 {
+    margin-top: 10px;
+    width: 100%;
+  }
+  .formsr .btn-a {
+    width: 100%;
+  }
+  .formsr .btn-1 {
+    margin-top: 10px;
+    width: 100%;
+  }
+  .footerContainer .footerNew {
+    width: 400px;
+  }
+  .content-prov .buttoniOpen {
+    position: static;
+    width: 100%;
+  }
+  .content-prov .buttoniClosed {
+    position: static;
+    width: 100%;
+  }
+  .content-prov .buttoniWin {
+    position: static;
+    width: 100%;
+  }
+  .landingWhat {
+    display: block;
+  }
+  .landingWhat .imageContainer {
+    width: 100%;
+    padding: 80px 80px 0;
+  }
+  .landingWhat .imageContainer img {
+    width: 100%;
+  }
+  .landingWhat .descContainer {
+    width: 100%;
+  }
+  .landingHow .howContainer {
+    display: block;
+    width: 100%;
+  }
+  .landingHow .howContainer .howPanel{
+    width: 100%;
+  }
+  .sideImage {
+    background-size: 500px;
+    background-position: right;
+  }
+  .navbarParticipant .joinButton {
+    width: 100% !important;
+  }
+  .navbarParticipant .nav-link {
+    width: 100% !important;
+    text-align: center;
+  }
+  .content-search .buttonApply {
+    bottom: 0;
+    top: unset;
+    left: 0;
+    width: 100%;
+    right: 20px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+  }
+  .content-p {
+    padding-bottom: 40px;
+  }
+  .adminDashboard .table {
+    display: none;
+  }
+  .adminDashboard .smallTable {
+    display: block;
+  }
+}
+
+/* screen < 576px */
+@media (max-width: 576px) {
+  .navbarParticipant .navbar-brand {
+    font-size: 30px;
+  }
+  .navbarParticipant .navbar-brand img {
+    height: 35px;
+    width: 35px;
+    margin-top: -5px;
+  }
+  .contestDetail h1 {
+    font-size: 30px;
+    margin-top: 30px;
+  }
+  .contestDetail .submissions {
+    margin-top: 30px;
+  }
+  .contestDetail button {
+    margin-bottom: 0;
+  }
+  .providerContestPayment h1 {
+    font-size: 30px;
+  }
+  .formTemplate h1 {
+    font-size: 30px;
+  }
+  .footerContainer {
+    padding-top: 0;
+  }
+  .footerContainer .footerNew {
+    width: 100%;
+    padding: 60px 30px 10px;
+  }
+  .footerContainer .footerNew .footerInfo {
+    display: block;
+  }
+  .footerContainer .footerNew .footerInfo .footerInfoLeft {
+    border-right: none;
+    width: 100%;
+    padding-right: 0px;
+  }
+  .footerContainer .footerNew .footerInfo .footerInfoRight {
+    width: 100%;
+    padding-left: 0px;
+  }
+  .footerContainer .footerNew .footerInfo .footerInfoRight .footerPowered {
+    margin-top: 30px;
+  }
+  .formsr {
+    display: flex;
+  }
+  .formsr .option {
+    width: 80px;
+  }
+  .formsr .search-box {
+    flex: auto;
+  }
+  .formsr .search-box .search-input {
+    width: 100% !important;
+  }
+  .loadingLogo img {
+    width: 80px;
+  }
+  .landingRole .roleDesc .roleContainer {
+    width: 100%;
+  }
+  .landingRole .roleDesc .roleContainer .showRole {
+    height: 120px;
+  }
+  .landing-parent {
+    background-position: bottom;
+    background-size: 500px;
+    height: 670px;
+    margin-bottom: 50px;
+  }
+  .landingDesc {
+    margin-right: 40px !important;
+  }
+  .form-control {
+    margin-bottom: 10px;
+  }
+  .landing-center h1 {
+    font-size: 50px !important;
+    width: 100% !important;
+  }
+  .landingRole .roleDesc h1 {
+    font-size: 30px;
+  }
+  .landingRole .roleImage {
+    width: 100%;
+    padding: 50px;
+  }
+  .landingRole .roleImage img {
+    width: 100%;
+  }
+  .landingHow h1 {
+    font-size: 30px;
+  }
+  .searchIcon {
+    top: 40% !important;
+  }
+  .navbar-toggler {
+    padding: 4px 8px;
+  }
+  .navbar-toggler-icon {
+    height: 20px;
+    width: 20px;
+  }
+  .payment {
+    margin: 50px 20px 70px !important;
+  }
+  .modalPoster .modalPosterContent {
+    width: 90%;
+    height: initial;
+  }
+  .modalPoster i {
+    z-index: 1;
+  }
+}
+
+/* screen < 440px */
+@media (max-width: 440px) {
+  .navbarParticipant .navbar-brand {
+    font-size: 20px;
+  }
+  .navbarParticipant .navbar-brand img {
+    height: 25px;
+    width: 25px;
+    margin-top: -5px;
+  }.navbarParticipant .navbar-brand span {
+    margin-left: 5px;
+  }
+  .contestDetail .submissions .submissionsContainer {
+    margin: 50px 0 0 0;
+  }
+  .contestDetail .submissions .submissionsContainer .submissionsCard {
+    height: 200px;
+    width: 200px;
+  }
+  .contestDetail .submissions .submissionsContainer .submissionsCard .submissionsImage {
+    height: 110px;
+  }
+  .contestDetail .submissions .submissionsContainer .submissionsCard h5 {
+    margin: 5px 0 5px 10px;
+    font-size: 14px;
+  }
+  .contestDetail .submissions .submissionsContainer .submissionsCard p {
+    margin: 5px 0 5px 10px;
+    width: 100%;
+    font-size: 12px;
+  }
+  .contestSubmissions .inputContainer .inputDisplay {
+    height: 170px;
+  }
+  .contestSubmissions .inputBoxes1 .box1 {
+    display: none;
+  }
+  /* .contestSubmissions .inputContainer .inputDisplay .inputBoxes {
+    display: none;
+  } */
+  .contestSubmissions .inputContainer input {
+    height: 170px;
+  }
+  .contestSubmissions .inputContainer {
+    height: 170px;
+  }
+  .modal .button {
+    margin: 0 20px;
+    position: static;
+    width: 85%;
+  }
+  .modalBody .modalImage {
+    height: 250px;
+  }
+  .modalBody .carouselImage {
+    height: 250px;
+  }
+  .modalBody .modalCarousel {
+    height: 250px;
+  }
+  .modal .buttonContainer {
+    height: 50px;
+  }
+  .modalBody h4 {
+    font-size: 16px;
+    margin: 10px 20px 5px;
+  }
+  .modalBody p {
+    font-size: 12px;
+    margin: 5px 20px;
+  }
+  .providerWinner .submissionsCardWinner {
+    height: 200px;
+    width: 200px;
+  }
+  .providerWinner .submissionsCardWinner .submissionsImage {
+    height: 110px;
+  }
+  .providerWinner .submissionsCardWinner h5 {
+    margin: 5px 0 5px 10px;
+    font-size: 14px;
+  }
+  .providerWinner .submissionsCardWinner p {
+    margin: 5px 0 5px 10px;
+    width: 100%;
+    font-size: 12px;
+  }
+  .pagination .pageNumber {
+    display: none;
+  }
+  .pagination .pageBoxNew {
+    display: flex !important;
+  }
+  .landingWhat .imageContainer {
+    padding: 30px;
+  }
+  .landingWhat .descContainer {
+    padding: 20px;
+  }
+  .landingWhat .descContainer h1 {
+    font-size: 40px;
+  }
+  .landingRole .roleDesc .roleContainer .showRole {
+    height: 140px;
+  }
+  .landingHow .howContainer .howPanel h5{
+    padding: 0;
+  }
+  .landingHow .howContainer .howPanel p{
+    padding: 0;
+  }
+  .confirmWinner {
+    height: 0;
+    transition: 0.5s;
+    background-color: #ffffff;
+    position: absolute;
+    top: 160px;
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 2;
+  }
+  .confirmWinner p {
+    /* font-weight: 700;
+    color: #8FBD4B; */
+    font-size: 14px !important;
+    margin: 10px 40px !important;
+  }
+  .showConfirm {
+    height: 110px;
+  }
+  .confirmWinner button {
+    height: 30px;
+    width: 50px;
+    font-size: 14px;
+    margin: 0 5px;
+    background-color: #8FBD4B;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+  }
+  .adminPaymentApprove {
+    margin-top: 40px;
+  }
+  .modalError .errorBody img {
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+/* screen < 370px */
+@media (max-width: 370px) {
+  .landingRole .roleDesc .roleContainer .roleDesc p {
+    font-size: 13px;
+  }
+  .input-group .form-control {
+    width: 200px !important;
+  }
+  .landing-parent {
+    background-position: bottom;
+    background-size: 400px;
+    height: 750px;
+    margin-bottom: 50px;
+  }
+
+  .image-flex-container {
+    display: block;
+  }
+  .modalError .errorBody {
+    height: 300px;
+  }
+  .adminDashboard .smallTable .tableContent .contentDescShow {
+    height: 310px;
+}
+
+}
+
+/* media screen ends */
+
+/* nyoba darkmode */
+
+.light-mode {
+  background-color: #fff;
+  color: #333;
+  transition: background-color 0.25s ease-out;
+}
+
+.light-mode nav {
+  transition: background-color 0.25s ease-out;
+}
+
+.dark-mode {
+  background-color: #1a1919;
+  color: #999;
+}
+
+.dark-mode nav {
+  background-color: #1b2938;
+}

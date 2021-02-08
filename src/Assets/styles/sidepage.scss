@@ -1,0 +1,67 @@
+.side-parent {
+  background-color: white;
+  overflow: hidden;
+  // background-image: url('../../Assets/icons/logo/Achieving\ Goal.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  // position: fixed;
+  // border: 2px solid red;
+  width: 100%;
+  height: 300px;
+  margin-left: 0;
+  display: flex;
+  border: 2px solid blue;
+  .col-lg-4 {
+    padding: 0;
+  }
+  .sidePage {
+    width: 360px;
+    border: 2px solid red;
+  }
+  .backgroundImage {
+    width: 100%;
+    border: 2px solid red !important;
+  }
+}
+
+.side-page {
+  background-color: white !important;
+  .favourite-image {
+    display: block;
+    padding-top: 5%;
+    padding-left: 3%;
+    padding-right: auto;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .favourite-image {
+    height: auto;
+  }
+}
+
+@media (max-width: 1200px) {
+  .favourite-image {
+    height: auto;
+    width: 150%;
+  }
+}
+
+.radioCenter {
+  margin-right: 20%;
+  padding-right: 20%;
+}
+p {
+  a {
+    text-decoration: none;
+    color: #ffffff;
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}
+// body {
+//     background-color: white;
+// }

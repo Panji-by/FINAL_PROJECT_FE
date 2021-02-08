@@ -1,0 +1,63 @@
+.winner-info {
+  text-align: center;
+  margin-bottom: 3%;
+  margin-top: 50px;
+  p {
+    color: #a8cc74;
+    font-weight: bold;
+  }
+  .winner-info-child {
+    line-height: 1.6;
+  }
+}
+
+.text-center{
+  button:hover{
+    transition-duration: 0.4s;
+    background-color: #a8cc74;
+    color: white;
+
+  }
+}
+
+.sorrow {
+  line-height: 1.6;
+  p {
+    margin-left: -5.5%;
+  }
+  input {
+    width: 150%;
+    margin-left: -23%;
+  }
+}
+
+.display-none{
+    display: none;
+}
+
+.button-winner {
+  color: white;
+  margin-top: 2%;
+  padding: 1% 5%;
+  background-color: #a8cc74;
+  border: none;
+  margin-bottom: 20px;
+}
+
+.winner-sent {
+  background-color: #d7f3b0;
+  margin-top: 2%;
+  width: 56%;
+  height: 150px;
+  padding: 7% 25%;
+  margin-bottom: 20px;
+  p{
+    font-size: 20px;
+  }
+}
+
+.input-admin-payment{
+  width: 30%;
+  margin-top: 2.5%;
+  margin-left: 35%;
+}
