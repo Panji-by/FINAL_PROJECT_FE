@@ -78,7 +78,7 @@ const AboutUs = () => {
         <h1 data-aos="fade-down" className="judul-center">
           About RealizDea
         </h1>
-        <div className="flexy" style={{paddingTop:'40px'}}>
+        <div className="flexy apalah" style={{paddingTop:'40px'}}>
           <div data-aos="fade-left" className="about-body col-lg-6">
             <h6 className="hahaha6">Goals</h6>
             <p>
@@ -104,6 +104,7 @@ const AboutUs = () => {
             //   backgroundImage: 'url("../../AssetsSaras/about-page.jpg")',
             // }}
           >
+            
             <img className="img-small mx-auto" src={Img} />
           </div>
         </div>

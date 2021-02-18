@@ -619,6 +619,13 @@ body {
   .navbarParticipant .nav-link {
     margin: 0 10px;
   }
+
+  .apalah{
+    display: block !important;
+  }
+  /* .favourite-img .img-small{
+    display: block;
+  } */
   .contestDetail .submissions .submissionsContainer {
     justify-content: center;
   }
@@ -731,6 +738,10 @@ body {
   }
   .modal-dialog {
     width: 90%;
+  }
+
+  .img-small{
+    display: none;
   }
 
   .buttoniPending{

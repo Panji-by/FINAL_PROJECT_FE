@@ -108,7 +108,7 @@ const RegisterPage = (props) => {
 
   return (
     <div>
-      <div data-aos="fade-right" className='sidePage'>
+      <div className='sidePage'>
         {token ? <Redirect to={role === 3 ? '/participant/search' : role === 2 ? '/provider/search' : '/admin/dashboard'} /> : null}
         <Form className="form-center" onSubmit={handleSubmitSignup}>
           <div style={{display:'flex', marginBottom:'25px'}}>
@@ -117,7 +117,7 @@ const RegisterPage = (props) => {
             </Link>
             <h1 className='joinTitle' style={{cursor:'auto'}}>Create an account</h1>
           </div>
-          <FormGroup data-aos="fade-right" className='form-group join-group'>
+          <FormGroup className='form-group join-group'>
             <Label for="name">Full Name</Label>
             <div>
               <Input
@@ -136,7 +136,7 @@ const RegisterPage = (props) => {
               Full name must be alphabet only.
             </p>
           </FormGroup>
-          <FormGroup data-aos="fade-right" className='form-group join-group'>
+          <FormGroup className='form-group join-group'>
             <Label for="email">Email</Label>
             <div>
               <Input
@@ -155,7 +155,7 @@ const RegisterPage = (props) => {
               Input is not a valid e-mail!
             </p>
           </FormGroup>
-          <FormGroup data-aos="fade-right" className='form-group join-group'>
+          <FormGroup className='form-group join-group'>
             <Label for="pass">Password</Label>
             <div>
               <Input
